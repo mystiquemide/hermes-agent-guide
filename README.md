@@ -227,10 +227,15 @@ NT: Why I said N for the rest of the socials is cause they are less important, t
 
 ## Optional: Run Hermes on a VPS (24/7)
 
-Want Hermes online all the time, even when your PC is off? You can put it on a cheap VPS.
+Want Hermes online all the time, even when your PC is off? Put it on a cheap VPS. This guide uses Tencent Cloud Lighthouse.
 
-- Get a VPS — Hetzner, DigitalOcean, AWS Lightsail, anything with Ubuntu. Even $4-5/mo works.
-- SSH into it and run the install:
+- Go to https://console.cloud.tencent.com/lighthouse → create an account and log in
+- Click Buy → pick Lighthouse instance
+- Select your country, choose Ubuntu as the OS
+- Pick the plan that fits your budget (even the cheapest works)
+- Complete payment and wait for the instance to spin up
+- Click Log In on your instance to open the web terminal, or SSH in from your machine
+- Run the install:
   ```
   curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
   ```
