@@ -126,6 +126,17 @@ NT: Why I said N for the rest of the socials is cause they are less important, t
 
 <img width="1132" height="212" alt="WindowsTerminal_2B36qsLpcD" src="https://github.com/user-attachments/assets/91046ca1-0545-46be-af25-2ec4651e87da" />
 
+## Discord Bot Setup
+
+- Go to https://discord.com/developers/applications → New Application → give it a name
+- Click Bot on the left → Reset Token → copy your bot token
+- Scroll to Privileged Gateway Intents → toggle ON Message Content Intent → Save Changes
+- Go to Installation → Guild Install → pick scopes `bot` and `applications.commands` → copy the invite link
+- Open the link, invite the bot to your server
+- In Discord: Settings → Advanced → Developer Mode ON → right-click your name → Copy User ID
+- Run `hermes gateway setup` → select Discord → paste your token and user ID when asked
+- Done. Tag the bot in any channel to start chatting.
+
 ## Step 9
 ## Install the gateway as a systemd service? (runs in background, starts on boot)
 - Click on Y and press ENTER to use the default
@@ -207,6 +218,23 @@ NT: Why I said N for the rest of the socials is cause they are less important, t
 <img width="1382" height="607" alt="WindowsTerminal_uWasLNXZ9g" src="https://github.com/user-attachments/assets/b9baad72-5600-4dc8-abf1-aebde85d19d3" />
 
 <img width="1387" height="1020" alt="WindowsTerminal_xQCSbokcHP" src="https://github.com/user-attachments/assets/e5edc2b1-b28d-477b-a450-3105777ab1ba" />
+
+## Optional: Run Hermes on a VPS (24/7)
+
+Want Hermes online all the time, even when your PC is off? You can put it on a cheap VPS.
+
+- Get a VPS — Hetzner, DigitalOcean, AWS Lightsail, anything with Ubuntu. Even $4-5/mo works.
+- SSH into it and run the install:
+  ```
+  curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+  ```
+- Go through the setup wizard, same as on your local machine
+- Run `hermes gateway setup` to connect Telegram or Discord
+- Start it in the background:
+  ```
+  hermes gateway --daemon
+  ```
+- That's it. Your agent runs 24/7. Chat with it from your phone anytime.
 
 ## If you have any questions, dm [MYSTIQUEMIDE](https://x.com/MystiqueMide)
 
