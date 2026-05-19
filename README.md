@@ -137,6 +137,12 @@ NT: Why I said N for the rest of the socials is cause they are less important, t
 - Run `hermes gateway setup` → select Discord → paste your token and user ID when asked
 - Done. Tag the bot in any channel to start chatting.
 
+- <img width="2072" height="1039" alt="image" src="https://github.com/user-attachments/assets/25edf52c-4078-47b3-be34-5ad12b4b21d2" />
+
+<img width="2072" height="1039" alt="image" src="https://github.com/user-attachments/assets/5a0d7b68-4ae1-433f-a3fa-e499221e0c57" />
+
+
+
 ## Step 9
 ## Install the gateway as a systemd service? (runs in background, starts on boot)
 - Click on Y and press ENTER to use the default
