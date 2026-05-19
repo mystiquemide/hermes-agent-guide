@@ -227,14 +227,16 @@ NT: Why I said N for the rest of the socials is cause they are less important, t
 
 ## Optional: Run Hermes on a VPS (24/7)
 
-Want Hermes online all the time, even when your PC is off? Put it on a cheap VPS. This guide uses Tencent Cloud Lighthouse.
+Want Hermes online 24/7 even when your PC is off? Put it on a cheap VPS.
 
-- Go to https://console.cloud.tencent.com/lighthouse → create an account and log in
-- Click Buy → pick Lighthouse instance
-- Select your country, choose Ubuntu as the OS
-- Pick the plan that fits your budget (even the cheapest works)
-- Complete payment and wait for the instance to spin up
-- Click Log In on your instance to open the web terminal, or SSH in from your machine
+This guide uses [Tencent Cloud Lighthouse](https://console.tencentcloud.com/lighthouse), it's affordable and beginner-friendly.
+
+- Go to https://console.tencentcloud.com/lighthouse → click **Sign Up Free** to create an account
+- After logging in, click **Buy** and select **Lighthouse**
+- Pick a region close to you and choose **Ubuntu** as the OS
+- Choose a plan, the Linux Starter (2 vCPU, 2 GB RAM) works perfectly and is very cheap
+- Complete payment and wait for the instance to deploy
+- Once ready, click **Log In** on your instance to open the web terminal, or SSH in
 - Run the install:
   ```
   curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
@@ -245,7 +247,7 @@ Want Hermes online all the time, even when your PC is off? Put it on a cheap VPS
   ```
   hermes gateway --daemon
   ```
-- That's it. Your agent runs 24/7. Chat with it from your phone anytime.
+- Done. Your agent is live 24/7, chat with it anytime from your phone.
 
 ## If you have any questions, dm [MYSTIQUEMIDE](https://x.com/MystiqueMide)
 
